@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Weather-themed color palette */
+    --background: 206 100% 97%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 206 100% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 43 74% 66%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 206 100% 50%;
+    --radius: 0.75rem;
+
+    /* Weather condition colors */
+    --weather-sunny: 43 96% 56%;
+    --weather-cloudy: 210 14% 53%;
+    --weather-rainy: 206 100% 50%;
+    --weather-stormy: 240 5.9% 10%;
+    --weather-snowy: 0 0% 100%;
+    --weather-foggy: 210 40% 96%;
+
+    /* Temperature colors */
+    --weather-hot: 14 91% 60%;
+    --weather-warm: 43 74% 66%;
+    --weather-cool: 206 100% 50%;
+    --weather-cold: 221 83% 53%;
+
+    /* Gradients */
+    --gradient-sky: linear-gradient(135deg, hsl(206 100% 87%) 0%, hsl(221 100% 91%) 100%);
+    --gradient-card: linear-gradient(145deg, hsla(0, 0%, 100%, 0.9) 0%, hsla(0, 0%, 100%, 0.7) 100%);
+    --gradient-weather: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsla(206, 22%, 7%, 0.1), 0 2px 4px -1px hsla(206, 22%, 7%, 0.06);
+    --shadow-weather: 0 10px 25px -5px hsla(206, 100%, 50%, 0.25), 0 8px 10px -6px hsla(206, 100%, 50%, 0.1);
+    --shadow-hover: 0 20px 25px -5px hsla(206, 100%, 50%, 0.15), 0 10px 10px -5px hsla(206, 100%, 50%, 0.04);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 206 100% 50%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 43 74% 66%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 206 100% 50%;
+
+    /* Dark mode gradients */
+    --gradient-sky: linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(217 33% 18%) 100%);
+    --gradient-card: linear-gradient(145deg, hsla(222, 84%, 5%, 0.8) 0%, hsla(217, 33%, 18%, 0.6) 100%);
+
+    /* Dark mode shadows */
+    --shadow-card: 0 4px 6px -1px hsla(0, 0%, 0%, 0.3), 0 2px 4px -1px hsla(0, 0%, 0%, 0.18);
+    --shadow-weather: 0 10px 25px -5px hsla(206, 100%, 50%, 0.4), 0 8px 10px -6px hsla(206, 100%, 50%, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
