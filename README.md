@@ -1,12 +1,27 @@
-# React + Vite
+# 🌦️ Weather Checking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean weather app: search any city, or use your current location, for the current conditions, air quality and a 3-day forecast, and bookmark your favourite cities so they are one click away next time. Built with **React**, **Vite** and **TypeScript**, styled with **Tailwind CSS** and shadcn/ui components, using [WeatherAPI.com](https://www.weatherapi.com/).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search a city, or use **your location**, for temperature, conditions, humidity, wind and **air quality**
+- **3-day forecast** in a detail pop-up
+- **Bookmark cities**, saved in the browser (`localStorage`)
+- Toast notifications and a responsive layout
 
-## Expanding the ESLint configuration
+## Run it locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev          # http://localhost:8080
+```
+
+The app calls `api.weatherapi.com` with a WeatherAPI key set in `src/pages/Index.tsx` (`API_KEY`); use your own free key from weatherapi.com.
+
+## Tech
+
+React · Vite · TypeScript · Tailwind CSS · shadcn/ui (Radix) · TanStack Query · WeatherAPI.com
+
+---
+
+Built by [Muhammad Suleman](https://github.com/Suleman-Saleh)
